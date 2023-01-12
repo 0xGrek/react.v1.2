@@ -11,14 +11,12 @@ const HeaderCardButton = (props) => {
         return curNumber + item.amount;
     }, 0);
 
-    return (
-        <button className={classes.button} onClick={props.onClick}>
-            <span className={classes.icon}>
-                <CartIcon />
-            </span>
-            <span>Your car</span>
-            <span className={classes.badge}>{numberOfCartItems}</span>
-        </button>
-    );
+    <button className={classes.button} onClick={props.onClick}>
+        <span className={classes.icon}>
+            <CartIcon />
+        </span>
+        <span>Your car</span>
+        <span className={classes.badge}>{numberOfCartItems}</span>
+    </button>;
 };
 export default HeaderCardButton;
