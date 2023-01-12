@@ -7,7 +7,7 @@ const defaultCartState = {
     totalAmount: 0,
 };
 // state =  last snepshot
-const cartReducer = (state, рррорро) => {
+const cartReducer = (state, action) => {
     if (action.type === "ADD") {
         const updateItems = state.items.concat(action.item);
 
