@@ -8,11 +8,11 @@ const HeaderCardButton = (props) => {
     const cartCtx = useContext(CartContext);
 
     const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
-        return curNumber + item.amount;
+        return curNumber + item.amunt;
     }, 0);
 
     <button className={classes.button} onClick={props.onClick}>
-        <span className={classes.icon}>
+        <span className={classes.}>
             <CartIcon />
         </span>
         <span>Your car</span>
