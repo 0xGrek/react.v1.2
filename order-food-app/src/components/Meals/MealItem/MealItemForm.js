@@ -4,14 +4,14 @@ import classes from "./MealItemForm.module.css";
 import Input from "../../UI/Input";
 
 const MealItemForm = (props) => {
-    const [amountIsValid, setAmountIsValid] = useState(true);
+    const [amountIsValid, setAmountIsValid] = useState(true); // form valid or not
 
     const amountInputRef = useRef();
 
     const submitHandler = (event) => {
         event.preventDefault();
 
-        const enteredAmount = amountInputRef.current.value;
+        const enteredAmount = amountInputRef.current.value; // always a stirng
         const enteredAmountNumber = +enteredAmount;
 
         if (
