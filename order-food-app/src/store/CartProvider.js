@@ -2,10 +2,10 @@ import { useReducer } from "react";
 
 import CartContect from "./cart-context";
 
-const defaultCartState = {
-    items: [],
-    totalAmount: 0,
-};
+// const defaultCartState = {
+//     items: [],
+//     totalAmount: 0,
+// };
 // state =  last snepshot
 const cartReducer = (state, action) => {
     if (action.type === "ADD") {
