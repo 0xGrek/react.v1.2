@@ -2,5 +2,7 @@
 02-typ-page
 /side-menu
 first.practic
-*public
-*node_modules
+node_modules/
+*/node_modules/
+build/
+*/build/
